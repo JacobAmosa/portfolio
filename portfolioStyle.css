@@ -1,3 +1,62 @@
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgb(216, 197, 197);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbarOption {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbarOption:hover {
+    background-color: #111;
+
+}
+
+
+
+#intro {
+    text-align: center;
+}
+
 .listHeader {
     color: red;
+}
+
+#projects {
+    text-align: center;
+    list-style-position: inside;
+    background-color: pink;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#experience {
+    text-align: center;
+    list-style-position: inside;
+    background-color: yellow;
+    float: left;
+    width: 50%;
+    padding: 70px 0px 70px 0px;
+}
+
+#contacts {
+    text-align: center;
+    list-style-position: inside;
+    background-color: gray;
+    float: right;
+    width: 50%;
+    padding: 70px 0px 70px 0px;
 }
