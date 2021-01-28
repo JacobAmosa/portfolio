@@ -3,12 +3,20 @@
     margin: 0;
     padding: 0px;
     overflow: hidden;
-    background-color: rgb(216, 197, 197);
+    background-color: rgb(167, 167, 167);
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+}
+
+.intro {
+    text-align: center;
+    background-color: beige;
+    padding:0px;
+    margin:0px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .navbarOption {
@@ -25,8 +33,6 @@
 
 }
 
-
-
 #intro {
     text-align: center;
 }
@@ -35,28 +41,39 @@
     color: red;
 }
 
-#projects {
-    text-align: center;
-    list-style-position: inside;
-    background-color: pink;
-    padding-top: 25px;
-    padding-bottom: 25px;
+.infoItems {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
 }
 
-#experience {
-    text-align: center;
-    list-style-position: inside;
-    background-color: yellow;
-    float: left;
-    width: 50%;
-    padding: 70px 0px 70px 0px;
+.infoContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 300px;
+    flex: 1;
+  }
+
+.item,
+.projects {
+    display: flex;
+    justify-content: center;
 }
 
-#contacts {
-    text-align: center;
-    list-style-position: inside;
-    background-color: gray;
-    float: right;
-    width: 50%;
-    padding: 70px 0px 70px 0px;
-}
+.footer-container {
+    color: #fff;
+    background-color: #5995DA;  /* Blue */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer {
+    border: 1px solid #fff;  /* For debugging */
+    width: 900px;
+  }
