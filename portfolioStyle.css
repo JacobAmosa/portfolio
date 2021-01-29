@@ -10,21 +10,21 @@
     text-decoration: none;
 }
 
+.navbarOption {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 .intro {
     text-align: center;
     padding:0px;
     margin:0px;
     padding-top: 150px;
     padding-bottom: 150px;
-}
-
-.navbarOption {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
 
 .navbarOption:hover {
@@ -43,6 +43,7 @@
 .infoContainer {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
   }
   
 .item {
@@ -89,6 +90,13 @@
     .intro {
       background-color: #F09A9D; /* Red */
     }
+
+    .infoContainer {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column !important;
+    }
+
   }
   
   /* Tablet Styles */
@@ -96,25 +104,11 @@
     .intro {
       background-color: #F5CF8E; 
     }
-    /* .itemContainer{
-        display: flex;
-        justify-content: space-between;      FIX: FLEX DIRECTION DOESN'T CHANGE TO COLUMNS:(
-        flex-direction: column;
-    }
-    .item {
-        border: 1px solid #fff;
-        height: 300px;
-        flex: 1;
-        align-items: center;
-    } */
   }
   
   /* Desktop Styles */
   @media only screen and (min-width: 961px) {
     .intro {
       background-color: beige; 
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
     }
   }
