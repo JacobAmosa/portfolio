@@ -12,7 +12,6 @@
 
 .intro {
     text-align: center;
-    background-color: beige;
     padding:0px;
     margin:0px;
     padding-top: 150px;
@@ -29,7 +28,7 @@
 }
 
 .navbarOption:hover {
-    background-color: #111;
+    background-color: rgb(80, 78, 78);
 
 }
 
@@ -41,12 +40,6 @@
     color: red;
 }
 
-.infoItems {
-    display: flex;
-    justify-content: space-between;
-    /* flex-direction: row; */
-}
-
 .infoContainer {
     display: flex;
     justify-content: space-between;
@@ -54,26 +47,74 @@
   
 .item {
     border: 1px solid #fff;
-    background-color: #D6E9FE;
     height: 300px;
     flex: 1;
+    align-items: center;
+    flex-direction: column;
   }
 
 .item,
 .projects {
     display: flex;
     justify-content: center;
+    background-color: rgb(120, 182, 144);
+}
+
+.items,
+.experience {
+    background-color: rgb(120, 129, 182);
+}
+
+.items,
+.contacts {
+    background-color: rgb(182, 120, 128);
 }
 
 .footer-container {
     color: #fff;
-    background-color: #5995DA;  /* Blue */
+    background-color: rgb(167, 167, 167); 
     padding: 20px 0;
     display: flex;
     justify-content: center;
   }
   
   .footer {
-    border: 1px solid #fff;  /* For debugging */
     width: 900px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* Mobile Styles */
+@media only screen and (max-width: 500px) {
+    .intro {
+      background-color: #F09A9D; /* Red */
+    }
+  }
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 501px) and (max-width: 960px) {
+    .intro {
+      background-color: #F5CF8E; 
+    }
+    /* .itemContainer{
+        display: flex;
+        justify-content: space-between;      FIX: FLEX DIRECTION DOESN'T CHANGE TO COLUMNS:(
+        flex-direction: column;
+    }
+    .item {
+        border: 1px solid #fff;
+        height: 300px;
+        flex: 1;
+        align-items: center;
+    } */
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    .intro {
+      background-color: beige; 
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
   }
